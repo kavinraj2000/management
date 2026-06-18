@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+<<<<<<< HEAD
         android:label="tvkapp"
+=======
+        android:label="profilediscovery"
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

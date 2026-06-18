@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 
 import 'package:tvkapp/src/core/network/dio_network.dart';
+=======
+// lib/data/datasources/remote/profile_remote_datasource.dart
+
+
+import 'package:profilediscovery/src/core/network/dio_network.dart';
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
 abstract class ProfileRemoteDataSource {
   Future<List<Map<String, dynamic>>> fetchProfiles({

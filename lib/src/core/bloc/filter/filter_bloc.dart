@@ -1,6 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
+=======
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
 part 'filter_event.dart';
 part 'filter_state.dart';

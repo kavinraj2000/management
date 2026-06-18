@@ -2,9 +2,14 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
+<<<<<<< HEAD
 import 'package:tvkapp/src/data/domain/user_entity.dart';
 import 'package:tvkapp/src/feature/screens/profile/repo/profile_repo.dart';
 
+=======
+import 'package:profilediscovery/src/data/domain/user_entity.dart';
+import 'package:profilediscovery/src/feature/screens/profile/repo/profile_repo.dart';
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
 
 class FavoritesBloc extends Bloc<FavoritesEvent, FavoritesState> {

@@ -27,7 +27,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
   Win32Window::Size size(1280, 720);
+<<<<<<< HEAD
   if (!window.Create(L"tvkapp", origin, size)) {
+=======
+  if (!window.Create(L"profilediscovery", origin, size)) {
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);

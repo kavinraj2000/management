@@ -6,9 +6,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
+<<<<<<< HEAD
 import 'package:tvkapp/src/core/theme/app_theme.dart';
 import 'package:tvkapp/src/data/domain/user_entity.dart';
 import 'package:tvkapp/src/feature/screens/profile/bloc/profile_bloc.dart';
+=======
+import '../../../core/theme/app_theme.dart';
+import '../../blocs/profile/profile_bloc.dart';
+import '../../blocs/auth/auth_bloc.dart';
+import '../../../domain/entities/user_entity.dart';
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
 class MyProfilePage extends StatelessWidget {
   const MyProfilePage({super.key});
@@ -17,15 +24,24 @@ class MyProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ProfileBloc, ProfileState>(
       builder: (context, state) {
+<<<<<<< HEAD
         if (state.status==ProfileStatus.loading || state.status==ProfileStatus.initial) {
+=======
+        if (state is ProfileLoading || state is ProfileInitial) {
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
           return const Scaffold(
             body: Center(
                 child: CircularProgressIndicator(
                     color: AppTheme.primaryColor)),
           );
         }
+<<<<<<< HEAD
         if (state.status==ProfileStatus.success) {
           return _ProfileContent(user: state.user!);
+=======
+        if (state is ProfileLoaded) {
+          return _ProfileContent(user: state.user);
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         }
         return const Scaffold(
           body: Center(child: Text('Unable to load profile')),
@@ -112,7 +128,11 @@ class _ProfileContent extends StatelessWidget {
                       child: user.profilePicture == null ||
                               !File(user.profilePicture ?? '').existsSync()
                           ? Icon(Icons.person_rounded,
+<<<<<<< HEAD
                               size: 40, color: AppTheme.primaryColor)
+=======
+                              size: 40.sp, color: AppTheme.primaryColor)
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                           : null,
                     ),
                     Positioned(
@@ -127,7 +147,11 @@ class _ProfileContent extends StatelessWidget {
                               color: AppTheme.primaryColor, width: 1.5),
                         ),
                         child: Icon(Icons.camera_alt_rounded,
+<<<<<<< HEAD
                             size: 12, color: AppTheme.primaryColor),
+=======
+                            size: 12.sp, color: AppTheme.primaryColor),
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                       ),
                     ),
                   ],
@@ -220,7 +244,11 @@ class _ProfileContent extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.all(16.w),
         child: Row(
+<<<<<<< HEAD
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+=======
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
           children: [
             _StatItem(label: 'Profile\nViews', value: '142'),
             Container(
@@ -264,17 +292,28 @@ class _InfoRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
+<<<<<<< HEAD
         Icon(icon, size: 18, color: AppTheme.primaryColor),
+=======
+        Icon(icon, size: 18.sp, color: AppTheme.primaryColor),
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         SizedBox(width: 12.w),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(label,
                 style: TextStyle(
+<<<<<<< HEAD
                     fontSize: 11, color: AppTheme.textSecondary)),
             Text(value,
                 style: TextStyle(
                     fontSize: 14, fontWeight: FontWeight.w500)),
+=======
+                    fontSize: 11.sp, color: AppTheme.textSecondary)),
+            Text(value,
+                style: TextStyle(
+                    fontSize: 14.sp, fontWeight: FontWeight.w500)),
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
           ],
         ),
       ],
@@ -293,13 +332,21 @@ class _StatItem extends StatelessWidget {
       children: [
         Text(value,
             style: TextStyle(
+<<<<<<< HEAD
                 fontSize: 22,
+=======
+                fontSize: 22.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                 fontWeight: FontWeight.w700,
                 color: AppTheme.primaryColor)),
         SizedBox(height: 4.h),
         Text(label,
             style: TextStyle(
+<<<<<<< HEAD
                 fontSize: 11,
+=======
+                fontSize: 11.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                 color: AppTheme.textSecondary),
             textAlign: TextAlign.center),
       ],

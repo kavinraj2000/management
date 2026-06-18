@@ -1,7 +1,12 @@
 // lib/data/datasources/local/preferences_service.dart
 
+<<<<<<< HEAD
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tvkapp/src/core/constants/constants.dart';
+=======
+import 'package:profilediscovery/src/core/constants/constants.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
 class PreferencesService {
   static final PreferencesService _instance = PreferencesService._internal();
@@ -14,6 +19,11 @@ class PreferencesService {
     _prefs = await SharedPreferences.getInstance();
   }
 
+<<<<<<< HEAD
+=======
+  // ─── AUTH ─────────────────────────────────────────────────
+
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
   Future<void> setLoggedIn(bool value) async =>
       await _prefs.setBool(Constants.APP.keyIsLoggedIn, value);
 
@@ -47,6 +57,10 @@ class PreferencesService {
   String? get userName => _prefs.getString(Constants.APP.keyUserName);
   String? get authToken => _prefs.getString(Constants.APP.keyAuthToken);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
   Future<void> setDarkMode(bool value) async =>
       await _prefs.setBool(Constants.APP.keyIsDarkMode, value);
 
@@ -58,6 +72,10 @@ class PreferencesService {
   bool get isOnboardingComplete =>
       _prefs.getBool(Constants.APP.keyOnboardingComplete) ?? false;
 
+<<<<<<< HEAD
+=======
+  // ─── GENERIC ──────────────────────────────────────────────
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
   Future<void> setString(String key, String value) async =>
       await _prefs.setString(key, value);
@@ -72,4 +90,8 @@ class PreferencesService {
   Future<void> remove(String key) async => await _prefs.remove(key);
 
   Future<void> clearAll() async => await _prefs.clear();
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde

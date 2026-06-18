@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+// lib/presentation/blocs/profile/profile_event.dart
+
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 part of 'profile_bloc.dart';
 
 abstract class ProfileEvent extends Equatable {
@@ -19,7 +24,11 @@ class ProfileUpdateRequested extends ProfileEvent {
   final String location;
   final String aboutMe;
 
+<<<<<<< HEAD
   const ProfileUpdateRequested({
+=======
+  const ProfileUpdateRequested(Map<String, dynamic> data, {
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
     required this.fullName,
     required this.age,
     required this.phone,
@@ -46,4 +55,9 @@ class ProfilePictureUpdateRequested extends ProfileEvent {
 
   @override
   List<Object?> get props => [imagePath];
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde

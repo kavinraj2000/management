@@ -48,7 +48,11 @@ class AppTheme {
       titleTextStyle: TextStyle(
         fontFamily: 'Roboto',
         fontWeight: FontWeight.w500,
+<<<<<<< HEAD
         fontSize: 20,
+=======
+        fontSize: 20.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         color: Colors.white,
       ),
     ),
@@ -72,7 +76,11 @@ class AppTheme {
         textStyle: TextStyle(
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w500,
+<<<<<<< HEAD
           fontSize: 16,
+=======
+          fontSize: 16.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
           letterSpacing: 0.5,
         ),
       ),
@@ -88,7 +96,11 @@ class AppTheme {
         textStyle: TextStyle(
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w500,
+<<<<<<< HEAD
           fontSize: 16,
+=======
+          fontSize: 16.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         ),
       ),
     ),
@@ -98,7 +110,11 @@ class AppTheme {
         textStyle: TextStyle(
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w500,
+<<<<<<< HEAD
           fontSize: 14,
+=======
+          fontSize: 14.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         ),
       ),
     ),
@@ -128,78 +144,130 @@ class AppTheme {
       ),
       labelStyle: TextStyle(
         color: textSecondary,
+<<<<<<< HEAD
         fontSize: 14,
+=======
+        fontSize: 14.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontFamily: 'Roboto',
       ),
       hintStyle: TextStyle(
         color: textSecondary,
+<<<<<<< HEAD
         fontSize: 14,
+=======
+        fontSize: 14.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontFamily: 'Roboto',
       ),
     ),
     textTheme: TextTheme(
       displayLarge: TextStyle(
+<<<<<<< HEAD
         fontSize: 32,
+=======
+        fontSize: 32.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w300,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       displayMedium: TextStyle(
+<<<<<<< HEAD
         fontSize: 28,
+=======
+        fontSize: 28.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w400,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       headlineLarge: TextStyle(
+<<<<<<< HEAD
         fontSize: 24,
+=======
+        fontSize: 24.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w500,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       headlineMedium: TextStyle(
+<<<<<<< HEAD
         fontSize: 20,
+=======
+        fontSize: 20.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w500,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       headlineSmall: TextStyle(
+<<<<<<< HEAD
         fontSize: 18,
+=======
+        fontSize: 18.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w500,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       titleLarge: TextStyle(
+<<<<<<< HEAD
         fontSize: 16,
+=======
+        fontSize: 16.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w500,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       titleMedium: TextStyle(
+<<<<<<< HEAD
         fontSize: 14,
+=======
+        fontSize: 14.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w500,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       bodyLarge: TextStyle(
+<<<<<<< HEAD
         fontSize: 16,
+=======
+        fontSize: 16.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w400,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       bodyMedium: TextStyle(
+<<<<<<< HEAD
         fontSize: 14,
+=======
+        fontSize: 14.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w400,
         color: textColor,
         fontFamily: 'Roboto',
       ),
       bodySmall: TextStyle(
+<<<<<<< HEAD
         fontSize: 12,
+=======
+        fontSize: 12.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w400,
         color: textSecondary,
         fontFamily: 'Roboto',
       ),
       labelLarge: TextStyle(
+<<<<<<< HEAD
         fontSize: 14,
+=======
+        fontSize: 14.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         fontWeight: FontWeight.w500,
         color: primaryColor,
         fontFamily: 'Roboto',
@@ -219,7 +287,11 @@ class AppTheme {
     chipTheme: ChipThemeData(
       backgroundColor: surfaceColor,
       selectedColor: primaryColor.withOpacity(0.15),
+<<<<<<< HEAD
       labelStyle: TextStyle(fontSize: 12, fontFamily: 'Roboto'),
+=======
+      labelStyle: TextStyle(fontSize: 12.sp, fontFamily: 'Roboto'),
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20.r),
         side: const BorderSide(color: dividerColor),
@@ -250,7 +322,11 @@ class AppTheme {
       titleTextStyle: TextStyle(
         fontFamily: 'Roboto',
         fontWeight: FontWeight.w500,
+<<<<<<< HEAD
         fontSize: 20,
+=======
+        fontSize: 20.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         color: darkText,
       ),
     ),
@@ -273,7 +349,11 @@ class AppTheme {
         textStyle: TextStyle(
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w500,
+<<<<<<< HEAD
           fontSize: 16,
+=======
+          fontSize: 16.sp,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
         ),
       ),
     ),
@@ -293,8 +373,13 @@ class AppTheme {
         borderRadius: BorderRadius.circular(12.r),
         borderSide: const BorderSide(color: primaryLight, width: 2),
       ),
+<<<<<<< HEAD
       labelStyle: TextStyle(color: darkTextSecondary, fontSize: 14),
       hintStyle: TextStyle(color: darkTextSecondary, fontSize: 14),
+=======
+      labelStyle: TextStyle(color: darkTextSecondary, fontSize: 14.sp),
+      hintStyle: TextStyle(color: darkTextSecondary, fontSize: 14.sp),
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: darkSurface,

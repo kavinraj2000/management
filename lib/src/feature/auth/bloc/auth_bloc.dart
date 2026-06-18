@@ -1,8 +1,13 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+<<<<<<< HEAD
 import 'package:tvkapp/src/data/domain/user_entity.dart';
 import 'package:tvkapp/src/feature/auth/repo/auth_repo.dart';
 
+=======
+import 'package:profilediscovery/src/data/domain/user_entity.dart';
+import 'package:profilediscovery/src/feature/auth/repo/auth_repo.dart';
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
 part 'auth_event.dart';
 part 'auth_state.dart';

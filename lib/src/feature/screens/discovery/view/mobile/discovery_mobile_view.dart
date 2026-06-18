@@ -4,12 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+<<<<<<< HEAD
 import 'package:tvkapp/src/core/theme/app_theme.dart';
 import 'package:tvkapp/src/core/widget/filter_bottom_sheet.dart';
 import 'package:tvkapp/src/core/widget/profile_card.dart';
 import 'package:tvkapp/src/core/widget/shimmer_loader.dart';
 import 'package:tvkapp/src/feature/screens/discovery/bloc/dicovery_bloc.dart';
 
+=======
+import 'package:profilediscovery/src/core/theme/app_theme.dart';
+import 'package:profilediscovery/src/core/widget/filter_bottom_sheet_widget.dart';
+import 'package:profilediscovery/src/core/widget/profile_card_widget.dart';
+import 'package:profilediscovery/src/core/widget/shimmer_loader_widget.dart';
+import 'package:profilediscovery/src/feature/screens/discovery/bloc/dicovery_bloc.dart';
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 
 class DiscoveryPage extends StatelessWidget {
   const DiscoveryPage({super.key});
@@ -152,12 +160,21 @@ class _DiscoveryContentState extends State<_DiscoveryContent> {
                       },
                       child: GridView.builder(
                         controller: _scrollController,
+<<<<<<< HEAD
                         padding: EdgeInsets.fromLTRB(16, 8, 16, 16),
                         gridDelegate:
                             SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           mainAxisSpacing: 12,
                           crossAxisSpacing: 12,
+=======
+                        padding: EdgeInsets.fromLTRB(16.w, 8.h, 16.w, 16.h),
+                        gridDelegate:
+                            SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 12.h,
+                          crossAxisSpacing: 12.w,
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                           childAspectRatio: 0.72,
                         ),
                         itemCount: state.profiles.length +
@@ -194,7 +211,11 @@ class _DiscoveryContentState extends State<_DiscoveryContent> {
 
   Widget _buildHeader() {
     return Padding(
+<<<<<<< HEAD
       padding: EdgeInsets.fromLTRB(20, 16.h, 20.w, 8.h),
+=======
+      padding: EdgeInsets.fromLTRB(20.w, 16.h, 20.w, 8.h),
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
       child: Row(
         children: [
           Column(

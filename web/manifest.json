@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "tvkapp",
     "short_name": "tvkapp",
+=======
+    "name": "profilediscovery",
+    "short_name": "profilediscovery",
+>>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
