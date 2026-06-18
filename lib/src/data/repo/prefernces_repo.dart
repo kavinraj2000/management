@@ -1,7 +1,7 @@
 // lib/data/datasources/local/preferences_service.dart
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tvkapp/src/core/constants/constants.dart';
+import 'package:profilediscovery/src/core/constants/constants.dart';
 
 class PreferencesService {
   static final PreferencesService _instance = PreferencesService._internal();

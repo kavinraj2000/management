@@ -1,16 +1,20 @@
 
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
-import 'package:tvkapp/src/core/storage/data_base_helper.dart';
-import 'package:tvkapp/src/data/domain/user_entity.dart';
-import 'package:tvkapp/src/data/model/user_model.dart';
-import 'package:tvkapp/src/data/repo/prefernces_repo.dart';
+import 'package:profilediscovery/src/core/network/dio_network.dart';
+import 'package:profilediscovery/src/core/storage/data_base_helper.dart';
+import 'package:profilediscovery/src/data/domain/user_entity.dart';
+import 'package:profilediscovery/src/data/model/user_model.dart';
+import 'package:profilediscovery/src/data/repo/prefernces_repo.dart';
 import 'package:uuid/uuid.dart';
 
 
 class AuthRepository {
   final DatabaseHelper _db;
   final PreferencesService _prefs;
+    final DioClient _dioClient =DioClient() ;
+
+  
   final _uuid = const Uuid();
 
   AuthRepository(this._db, this._prefs);
@@ -21,66 +25,89 @@ class AuthRepository {
     return digest.toString();
   }
 
-  Future<UserEntity> register({
-    required String fullName,
-    required String email,
-    required String password,
-    String? phone,
-  }) async {
-    final exists = await _db.emailExists(email);
-    if (exists) {
-      throw Exception('Email already registered. Please login instead.');
-    }
+Future<UserEntity> register({
+  required String fullName,
+  required String email,
+  required String password,
+  String? phone,
+}) async {
+  final response = await _dioClient.get('/signin');
 
-    final now = DateTime.now();
-    final user = UserModel(
-      id: _uuid.v4(),
-      fullName: fullName,
-      email: email.toLowerCase().trim(),
-      phone: phone,
-      createdAt: now,
-      updatedAt: now,
+  final List users = response.data;
+
+  final exists = users.any(
+    (user) => user['email'] == email.toLowerCase().trim(),
+  );
+
+  if (exists) {
+    throw Exception(
+      'Email already registered. Please login instead.',
     );
-
-    final userMap = user.toMap();
-    userMap['password_hash'] = _hashPassword(password);
-
-    await _db.insertUser(userMap);
-
-    await _prefs.saveUserSession(
-      userId: user.id,
-      email: user.email,
-      name: user.fullName,
-    );
-
-    return user;
   }
 
-  Future<UserEntity> login({
-    required String email,
-    required String password,
-  }) async {
-    final userMap = await _db.getUserByEmail(email.toLowerCase().trim());
+  final now = DateTime.now();
 
-    if (userMap == null) {
-      throw Exception('No account found with this email.');
-    }
+  final user = UserModel(
+    id: _uuid.v4(),
+    fullName: fullName,
+    email: email.toLowerCase().trim(),
+    phone: phone,
+    createdAt: now,
+    updatedAt: now,
+  );
 
-    final passwordHash = _hashPassword(password);
-    if (userMap['password_hash'] != passwordHash) {
-      throw Exception('Incorrect password. Please try again.');
-    }
+  await _dioClient.post(
+    '/signin',
+    data: {
+      'id': user.id,
+      'fullName': user.fullName,
+      'email': user.email,
+      'phone': user.phone,
+      'password_hash': _hashPassword(password),
+      'createdAt': now.toIso8601String(),
+      'updatedAt': now.toIso8601String(),
+    },
+  );
 
-    final user = UserModel.fromMap(userMap);
+  await _prefs.saveUserSession(
+    userId: user.id,
+    email: user.email,
+    name: user.fullName,
+  );
 
-    await _prefs.saveUserSession(
-      userId: user.id,
-      email: user.email,
-      name: user.fullName,
-    );
+  return user;
+}
+Future<UserEntity> login({
+  required String email,
+  required String password,
+}) async {
+  final response = await _dioClient.get('/users');
 
-    return user;
+  final List users = response.data;
+
+  final passwordHash = _hashPassword(password);
+
+  final userMap = users.cast<Map<String, dynamic>>().firstWhere(
+    (user) =>
+        user['email'] == email.toLowerCase().trim() &&
+        user['password_hash'] == passwordHash,
+    orElse: () => {},
+  );
+
+  if (userMap.isEmpty) {
+    throw Exception('Invalid email or password');
   }
+
+  final user = UserModel.fromMap(userMap);
+
+  await _prefs.saveUserSession(
+    userId: user.id,
+    email: user.email,
+    name: user.fullName,
+  );
+
+  return user;
+}
 
   Future<void> logout() async {
     await _prefs.clearSession();

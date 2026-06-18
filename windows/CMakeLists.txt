@@ -1,11 +1,11 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
 <<<<<<< HEAD
-project(tvkapp LANGUAGES CXX)
+project(profilediscovery LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "tvkapp")
+set(BINARY_NAME "profilediscovery")
 =======
 project(profilediscovery LANGUAGES CXX)
 

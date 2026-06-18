@@ -6,7 +6,8 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tvkapp/src/feature/auth/bloc/auth_bloc.dart';
+import 'package:profilediscovery/src/core/constants/constants.dart';
+import 'package:profilediscovery/src/feature/auth/bloc/auth_bloc.dart';
 import '../../../core/theme/app_theme.dart';
 
 class LoginPage extends StatelessWidget {
@@ -43,21 +44,12 @@ class _LoginContentState extends State<_LoginContent> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.yellow,
+      backgroundColor: AppTheme.primaryColor,
       body: Center(
         child: Container(
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [const Color.fromARGB(255, 249, 18, 1), Colors.yellow],
-              begin: AlignmentGeometry.topStart,
-              end: AlignmentGeometry.bottomEnd
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.darkTextSecondary,
-                blurRadius: 20
-              )
-            ]
+           
+      
           ),
           child: BlocConsumer<AuthBloc, AuthState>(
             listener: (context, state) {
@@ -110,7 +102,7 @@ class _LoginContentState extends State<_LoginContent> {
         
                       Center(
                         child: Text(
-                          'Velachery People Connect.',
+                          'Profile Discovery',
                           style: Theme.of(context).textTheme.headlineLarge
                               ?.copyWith(fontWeight: FontWeight.w700),
                         ),

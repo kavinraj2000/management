@@ -2,7 +2,7 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:tvkapp/src/data/repo/prefernces_repo.dart';
+import 'package:profilediscovery/src/data/repo/prefernces_repo.dart';
 
 // part 'settings_event.dart';
 // part 'settings_state.dart';

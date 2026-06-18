@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:tvkapp/src/core/theme/app_theme.dart';
-import 'package:tvkapp/src/feature/auth/bloc/auth_bloc.dart';
-import 'package:tvkapp/src/feature/screens/settings/bloc/setting_bloc.dart';
+import 'package:profilediscovery/src/core/theme/app_theme.dart';
+import 'package:profilediscovery/src/feature/auth/bloc/auth_bloc.dart';
+import 'package:profilediscovery/src/feature/screens/settings/bloc/setting_bloc.dart';
 
 
 class SettingsPage extends StatelessWidget {

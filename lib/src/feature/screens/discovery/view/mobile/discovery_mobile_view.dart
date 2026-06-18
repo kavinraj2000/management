@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:tvkapp/src/core/theme/app_theme.dart';
-import 'package:tvkapp/src/core/widget/filter_bottom_sheet.dart';
-import 'package:tvkapp/src/core/widget/profile_card.dart';
-import 'package:tvkapp/src/core/widget/shimmer_loader.dart';
-import 'package:tvkapp/src/feature/screens/discovery/bloc/dicovery_bloc.dart';
+import 'package:profilediscovery/src/core/theme/app_theme.dart';
+import 'package:profilediscovery/src/core/widget/filter_bottom_sheet.dart';
+import 'package:profilediscovery/src/core/widget/profile_card.dart';
+import 'package:profilediscovery/src/core/widget/shimmer_loader.dart';
+import 'package:profilediscovery/src/feature/screens/discovery/bloc/dicovery_bloc.dart';
 
 
 class DiscoveryPage extends StatelessWidget {

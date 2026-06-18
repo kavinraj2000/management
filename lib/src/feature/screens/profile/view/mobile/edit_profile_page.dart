@@ -6,8 +6,8 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:tvkapp/src/core/theme/app_theme.dart';
-import 'package:tvkapp/src/feature/screens/profile/bloc/profile_bloc.dart';
+import 'package:profilediscovery/src/core/theme/app_theme.dart';
+import 'package:profilediscovery/src/feature/screens/profile/bloc/profile_bloc.dart';
 
 class EditProfilePage extends StatefulWidget {
   const EditProfilePage({super.key});

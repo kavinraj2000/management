@@ -8,7 +8,7 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 <<<<<<< HEAD
-	<string>Tvkapp</string>
+	<string>profilediscovery</string>
 =======
 	<string>Profilediscovery</string>
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -20,7 +20,7 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 <<<<<<< HEAD
-	<string>tvkapp</string>
+	<string>profilediscovery</string>
 =======
 	<string>profilediscovery</string>
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde

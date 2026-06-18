@@ -1,4 +1,3 @@
-// lib/core/errors/failures.dart
 
 abstract class Failure {
   final String message;
@@ -30,7 +29,6 @@ class UnknownFailure extends Failure {
   const UnknownFailure([super.message = 'An unknown error occurred']);
 }
 
-// lib/core/errors/exceptions.dart
 
 class NetworkException implements Exception {
   final String message;

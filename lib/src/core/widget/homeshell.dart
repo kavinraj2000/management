@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:tvkapp/src/feature/screens/favourite/bloc/favourite_bloc.dart';
-import 'package:tvkapp/src/feature/screens/profile/bloc/profile_bloc.dart';
+import 'package:profilediscovery/src/feature/screens/favourite/bloc/favourite_bloc.dart';
+import 'package:profilediscovery/src/feature/screens/profile/bloc/profile_bloc.dart';
 
 
 class HomeShell extends StatelessWidget {

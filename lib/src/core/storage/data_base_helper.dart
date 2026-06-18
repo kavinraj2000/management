@@ -2,7 +2,7 @@
 
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import 'package:tvkapp/src/core/constants/constants.dart';
+import 'package:profilediscovery/src/core/constants/constants.dart';
 
 class DatabaseHelper {
   static final DatabaseHelper _instance = DatabaseHelper.internal();

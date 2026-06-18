@@ -37,7 +37,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "33CC10EC2044A3C60003C045"
 <<<<<<< HEAD
-               BuildableName = "tvkapp.app"
+               BuildableName = "profilediscovery.app"
 =======
                BuildableName = "profilediscovery.app"
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33CC10EC2044A3C60003C045"
 <<<<<<< HEAD
-            BuildableName = "tvkapp.app"
+            BuildableName = "profilediscovery.app"
 =======
             BuildableName = "profilediscovery.app"
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -96,7 +96,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33CC10EC2044A3C60003C045"
 <<<<<<< HEAD
-            BuildableName = "tvkapp.app"
+            BuildableName = "profilediscovery.app"
 =======
             BuildableName = "profilediscovery.app"
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -117,7 +117,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "33CC10EC2044A3C60003C045"
 <<<<<<< HEAD
-            BuildableName = "tvkapp.app"
+            BuildableName = "profilediscovery.app"
 =======
             BuildableName = "profilediscovery.app"
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde

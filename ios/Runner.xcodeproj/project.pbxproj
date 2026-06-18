@@ -401,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 <<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.tvkapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery;
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery;
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -421,7 +421,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 <<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.tvkapp.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery.RunnerTests;
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery.RunnerTests;
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -442,7 +442,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 <<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.tvkapp.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery.RunnerTests;
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery.RunnerTests;
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -461,7 +461,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 <<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.tvkapp.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery.RunnerTests;
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery.RunnerTests;
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -596,7 +596,7 @@
 					"@executable_path/Frameworks",
 				);
 <<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.tvkapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery;
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery;
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
@@ -622,7 +622,7 @@
 					"@executable_path/Frameworks",
 				);
 <<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.tvkapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery;
 =======
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.profilediscovery;
 >>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde

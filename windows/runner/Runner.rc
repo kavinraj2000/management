@@ -91,12 +91,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
 <<<<<<< HEAD
-            VALUE "FileDescription", "tvkapp" "\0"
+            VALUE "FileDescription", "profilediscovery" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "tvkapp" "\0"
+            VALUE "InternalName", "profilediscovery" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "tvkapp.exe" "\0"
-            VALUE "ProductName", "tvkapp" "\0"
+            VALUE "OriginalFilename", "profilediscovery.exe" "\0"
+            VALUE "ProductName", "profilediscovery" "\0"
 =======
             VALUE "FileDescription", "profilediscovery" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"

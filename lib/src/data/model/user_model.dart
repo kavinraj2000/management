@@ -1,6 +1,6 @@
 
 
-import 'package:tvkapp/src/data/domain/user_entity.dart';
+import 'package:profilediscovery/src/data/domain/user_entity.dart';
 
 class UserModel extends UserEntity {
   const UserModel({
@@ -44,8 +44,8 @@ class UserModel extends UserEntity {
       'about_me': aboutMe,
       'age': age,
       'profile_picture': profilePicture,
-      'created_at': createdAt.toIso8601String(),
-      'updated_at': updatedAt.toIso8601String(),
+      'created_at': createdAt?.toIso8601String(),
+      'updated_at': updatedAt?.toIso8601String(),
     };
   }
 

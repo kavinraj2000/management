@@ -1,6 +1,6 @@
 
 
-import 'package:tvkapp/src/data/domain/user_entity.dart';
+import 'package:profilediscovery/src/data/domain/user_entity.dart';
 
 class ProfileModel extends ProfileEntity {
   const ProfileModel({

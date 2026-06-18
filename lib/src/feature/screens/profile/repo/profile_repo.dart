@@ -1,10 +1,10 @@
 
 
-import 'package:tvkapp/src/core/storage/data_base_helper.dart';
-import 'package:tvkapp/src/data/datasource/remote/profile_data_source.dart';
-import 'package:tvkapp/src/data/domain/user_entity.dart';
-import 'package:tvkapp/src/data/model/profile_model.dart';
-import 'package:tvkapp/src/data/repo/prefernces_repo.dart';
+import 'package:profilediscovery/src/core/storage/data_base_helper.dart';
+import 'package:profilediscovery/src/data/datasource/remote/profile_data_source.dart';
+import 'package:profilediscovery/src/data/domain/user_entity.dart';
+import 'package:profilediscovery/src/data/model/profile_model.dart';
+import 'package:profilediscovery/src/data/repo/prefernces_repo.dart';
 
 class ProfileRepository {
   final ProfileRemoteDataSource _remote;

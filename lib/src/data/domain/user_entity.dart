@@ -12,8 +12,8 @@ class UserEntity extends Equatable {
   final String? aboutMe;
   final int? age;
   final String? profilePicture;
-  final DateTime createdAt;
-  final DateTime updatedAt;
+  final DateTime? createdAt;
+  final DateTime? updatedAt;
 
   const UserEntity({
     required this.id,
@@ -25,8 +25,8 @@ class UserEntity extends Equatable {
     this.aboutMe,
     this.age,
     this.profilePicture,
-    required this.createdAt,
-    required this.updatedAt,
+     this.createdAt,
+     this.updatedAt,
   });
 
   UserEntity copyWith({

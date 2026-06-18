@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tvkapp/app/routes.dart';
-import 'package:tvkapp/src/core/theme/app_theme.dart';
+import 'package:profilediscovery/app/routes.dart';
+import 'package:profilediscovery/src/core/theme/app_theme.dart';
 
 class App extends StatelessWidget {
   @override

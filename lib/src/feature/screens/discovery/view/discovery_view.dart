@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tvkapp/src/core/services/service_locator.dart';
-import 'package:tvkapp/src/feature/screens/discovery/bloc/dicovery_bloc.dart';
-import 'package:tvkapp/src/feature/screens/discovery/view/mobile/discovery_mobile_view.dart';
-import 'package:tvkapp/src/feature/screens/profile/repo/profile_repo.dart';
+import 'package:profilediscovery/src/core/services/service_locator.dart';
+import 'package:profilediscovery/src/feature/screens/discovery/bloc/dicovery_bloc.dart';
+import 'package:profilediscovery/src/feature/screens/discovery/view/mobile/discovery_mobile_view.dart';
+import 'package:profilediscovery/src/feature/screens/profile/repo/profile_repo.dart';
 
 
 class DiscoveryView extends StatelessWidget {
