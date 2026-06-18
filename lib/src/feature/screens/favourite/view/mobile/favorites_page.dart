@@ -19,11 +19,11 @@ class FavoritesPage extends StatelessWidget {
       appBar: AppBar(title: const Text('Saved Profiles')),
       body: BlocBuilder<FavoritesBloc, FavoritesState>(
         builder: (context, state) {
-          if (state is FavoritesLoading || state is FavoritesInitial) {
+          if (state.status==FavoritesStatus.loading || state.status==FavoritesStatus.initial) {
             return const ShimmerProfileLoader();
           }
 
-          if (state is FavoritesError) {
+          if (state.status==FavoritesStatus.failure) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +31,7 @@ class FavoritesPage extends StatelessWidget {
                   Icon(Icons.error_outline_rounded,
                       size: 64, color: AppTheme.errorColor),
                   SizedBox(height: 16.h),
-                  Text(state.message),
+                  Text(state.errorMessage!),
                   SizedBox(height: 16.h),
                   ElevatedButton(
                     onPressed: () => context
@@ -44,7 +44,7 @@ class FavoritesPage extends StatelessWidget {
             );
           }
 
-          if (state is FavoritesLoaded) {
+          if (state.status==FavoritesStatus.success) {
             if (state.profiles.isEmpty) {
               return Center(
                 child: Padding(

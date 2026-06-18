@@ -2,11 +2,7 @@
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-<<<<<<< HEAD
 import 'package:tvkapp/src/core/constants/constants.dart';
-=======
-import 'package:profilediscovery/src/core/constants/constants.dart';
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 import '../constants/app_constants.dart';
 
 class DioClient {

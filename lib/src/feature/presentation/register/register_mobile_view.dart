@@ -6,11 +6,7 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-<<<<<<< HEAD
 import 'package:tvkapp/src/feature/auth/bloc/auth_bloc.dart';
-=======
-import 'package:profilediscovery/src/feature/auth/bloc/auth_bloc.dart';
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 import '../../../core/theme/app_theme.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -47,7 +43,6 @@ class _RegisterContentState extends State<_RegisterContent> {
       }
 
       context.read<AuthBloc>().add(
-<<<<<<< HEAD
         AuthRegisterRequested(
           fullName: values['full_name'] as String,
           email: values['email'] as String,
@@ -55,15 +50,6 @@ class _RegisterContentState extends State<_RegisterContent> {
           phone: values['phone'] as String?,
         ),
       );
-=======
-            AuthRegisterRequested(
-              fullName: values['full_name'] as String,
-              email: values['email'] as String,
-              password: values['password'] as String,
-              phone: values['phone'] as String?,
-            ),
-          );
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
     }
   }
 
@@ -79,16 +65,10 @@ class _RegisterContentState extends State<_RegisterContent> {
       ),
       body: BlocConsumer<AuthBloc, AuthState>(
         listener: (context, state) {
-<<<<<<< HEAD
           if (state.status == AuthStatus.registrationSuccess ||
               state.status == AuthStatus.authenticated) {
             context.go('/discovery');
           } else if (state.status == AuthStatus.failure) {
-=======
-          if (state.status==AuthStatus.registrationSuccess || state.status==AuthStatus.authenticated) {
-            context.go('/discovery');
-          } else if (state.status==AuthStatus.failure) {
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content: Text(state.message!),
@@ -109,25 +89,15 @@ class _RegisterContentState extends State<_RegisterContent> {
                   Text(
                     'Join ProfileHub',
                     style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-<<<<<<< HEAD
                       fontWeight: FontWeight.w700,
                     ),
-=======
-                          fontWeight: FontWeight.w700,
-                        ),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                   ),
                   SizedBox(height: 8.h),
                   Text(
                     'Fill in your details to get started',
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-<<<<<<< HEAD
                       color: AppTheme.textSecondary,
                     ),
-=======
-                          color: AppTheme.textSecondary,
-                        ),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                   ),
                   SizedBox(height: 32.h),
                   FormBuilder(
@@ -144,18 +114,12 @@ class _RegisterContentState extends State<_RegisterContent> {
                           textInputAction: TextInputAction.next,
                           validator: FormBuilderValidators.compose([
                             FormBuilderValidators.required(
-<<<<<<< HEAD
                               errorText: 'Full name is required',
                             ),
                             FormBuilderValidators.minLength(
                               2,
                               errorText: 'Name is too short',
                             ),
-=======
-                                errorText: 'Full name is required'),
-                            FormBuilderValidators.minLength(2,
-                                errorText: 'Name is too short'),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                           ]),
                         ),
                         SizedBox(height: 16.h),
@@ -169,17 +133,11 @@ class _RegisterContentState extends State<_RegisterContent> {
                           textInputAction: TextInputAction.next,
                           validator: FormBuilderValidators.compose([
                             FormBuilderValidators.required(
-<<<<<<< HEAD
                               errorText: 'Email is required',
                             ),
                             FormBuilderValidators.email(
                               errorText: 'Enter a valid email',
                             ),
-=======
-                                errorText: 'Email is required'),
-                            FormBuilderValidators.email(
-                                errorText: 'Enter a valid email'),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                           ]),
                         ),
                         SizedBox(height: 16.h),
@@ -192,17 +150,11 @@ class _RegisterContentState extends State<_RegisterContent> {
                           keyboardType: TextInputType.phone,
                           textInputAction: TextInputAction.next,
                           validator: FormBuilderValidators.compose([
-<<<<<<< HEAD
                             FormBuilderValidators.minLength(
                               10,
                               errorText: 'Enter a valid phone number',
                               checkNullOrEmpty: false,
                             ),
-=======
-                            FormBuilderValidators.minLength(10,
-                                errorText: 'Enter a valid phone number',
-                                checkNullOrEmpty: false),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                           ]),
                         ),
                         SizedBox(height: 16.h),
@@ -217,7 +169,6 @@ class _RegisterContentState extends State<_RegisterContent> {
                                 labelText: 'Password *',
                                 prefixIcon: const Icon(Icons.lock_outline),
                                 suffixIcon: IconButton(
-<<<<<<< HEAD
                                   icon: Icon(
                                     authState.isPasswordVisible
                                         ? Icons.visibility_outlined
@@ -226,22 +177,12 @@ class _RegisterContentState extends State<_RegisterContent> {
                                   onPressed: () => context.read<AuthBloc>().add(
                                     const AuthTogglePasswordVisibility(),
                                   ),
-=======
-                                  icon: Icon(authState.isPasswordVisible
-                                      ? Icons.visibility_outlined
-                                      : Icons.visibility_off_outlined),
-                                  onPressed: () => context
-                                      .read<AuthBloc>()
-                                      .add(
-                                          const AuthTogglePasswordVisibility()),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                                 ),
                               ),
                               obscureText: !authState.isPasswordVisible,
                               textInputAction: TextInputAction.next,
                               validator: FormBuilderValidators.compose([
                                 FormBuilderValidators.required(
-<<<<<<< HEAD
                                   errorText: 'Password is required',
                                 ),
                                 FormBuilderValidators.minLength(
@@ -249,12 +190,6 @@ class _RegisterContentState extends State<_RegisterContent> {
                                   errorText:
                                       'Password must be at least 6 characters',
                                 ),
-=======
-                                    errorText: 'Password is required'),
-                                FormBuilderValidators.minLength(6,
-                                    errorText:
-                                        'Password must be at least 6 characters'),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                               ]),
                             );
                           },
@@ -271,7 +206,6 @@ class _RegisterContentState extends State<_RegisterContent> {
                                 labelText: 'Confirm Password *',
                                 prefixIcon: const Icon(Icons.lock_outline),
                                 suffixIcon: IconButton(
-<<<<<<< HEAD
                                   icon: Icon(
                                     authState.isConfirmPasswordVisible
                                         ? Icons.visibility_outlined
@@ -288,23 +222,6 @@ class _RegisterContentState extends State<_RegisterContent> {
                               validator: FormBuilderValidators.required(
                                 errorText: 'Please confirm your password',
                               ),
-=======
-                                  icon: Icon(authState.isConfirmPasswordVisible
-                                      ? Icons.visibility_outlined
-                                      : Icons.visibility_off_outlined),
-                                  onPressed: () => context
-                                      .read<AuthBloc>()
-                                      .add(const AuthToggleConfirmPasswordVisibility()),
-                                ),
-                              ),
-                              obscureText:
-                                  !authState.isConfirmPasswordVisible,
-                              textInputAction: TextInputAction.done,
-                              onSubmitted: (_) => _onRegister(),
-                              validator: FormBuilderValidators.required(
-                                  errorText:
-                                      'Please confirm your password'),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                             );
                           },
                         ),
@@ -313,27 +230,17 @@ class _RegisterContentState extends State<_RegisterContent> {
                   ),
                   SizedBox(height: 32.h),
                   ElevatedButton(
-<<<<<<< HEAD
                     onPressed: state.status == AuthStatus.loading
                         ? null
                         : _onRegister,
                     child: state.status == AuthStatus.loading
-=======
-                    onPressed: state.status==AuthStatus.loading ? null : _onRegister,
-                    child: state.status==AuthStatus.loading
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                         ? const SizedBox(
                             height: 20,
                             width: 20,
                             child: CircularProgressIndicator(
-<<<<<<< HEAD
                               valueColor: AlwaysStoppedAnimation<Color>(
                                 Colors.white,
                               ),
-=======
-                              valueColor:
-                                  AlwaysStoppedAnimation<Color>(Colors.white),
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
                               strokeWidth: 2,
                             ),
                           )
@@ -355,8 +262,4 @@ class _RegisterContentState extends State<_RegisterContent> {
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde

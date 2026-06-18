@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -26,11 +25,3 @@ Future<void> main() async {
     ),
   );
 }
-=======
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const App());
-}
-
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde

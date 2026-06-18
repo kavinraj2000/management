@@ -6,11 +6,7 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-<<<<<<< HEAD
 import 'package:tvkapp/src/feature/auth/bloc/auth_bloc.dart';
-=======
-import 'package:profilediscovery/src/feature/auth/bloc/auth_bloc.dart';
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 import '../../../core/theme/app_theme.dart';
 
 class ForgotPasswordPage extends StatelessWidget {
@@ -90,11 +86,7 @@ class _ForgotPasswordContentState extends State<_ForgotPasswordContent> {
           ),
           child: Icon(
             Icons.lock_reset_rounded,
-<<<<<<< HEAD
             size: 32,
-=======
-            size: 32.sp,
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
             color: AppTheme.primaryColor,
           ),
         ),
@@ -164,11 +156,7 @@ class _ForgotPasswordContentState extends State<_ForgotPasswordContent> {
       children: [
         Icon(
           Icons.mark_email_read_rounded,
-<<<<<<< HEAD
           size: 80,
-=======
-          size: 80.sp,
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
           color: AppTheme.successColor,
         ),
         SizedBox(height: 24.h),

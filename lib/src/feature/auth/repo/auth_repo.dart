@@ -1,17 +1,10 @@
 
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
-<<<<<<< HEAD
 import 'package:tvkapp/src/core/storage/data_base_helper.dart';
 import 'package:tvkapp/src/data/domain/user_entity.dart';
 import 'package:tvkapp/src/data/model/user_model.dart';
 import 'package:tvkapp/src/data/repo/prefernces_repo.dart';
-=======
-import 'package:profilediscovery/src/core/storage/data_base_helper.dart';
-import 'package:profilediscovery/src/data/domain/user_entity.dart';
-import 'package:profilediscovery/src/data/model/user_model.dart';
-import 'package:profilediscovery/src/data/repo/prefernces_repo.dart';
->>>>>>> 5bdfc22ad600a67ce0671fc6ab71faf855003dde
 import 'package:uuid/uuid.dart';
 
 
